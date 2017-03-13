@@ -1,11 +1,17 @@
+package firstlesson;
+
 import java.util.Scanner;
 
 public class Input {
-	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);
+	private String a;
 
-		System.out.println("Type something: ");
-		String a = reader.nextLine();	
-		System.out.println("You typed: " + a);	
-}
+	public void input() {
+		Scanner reader = new Scanner(System.in);
+		
+		System.out.print("Koks tavo vardas? ");
+		a = reader.nextLine();
+		System.out.println("Hello " + a + "!");
+
+	}
+
 }
